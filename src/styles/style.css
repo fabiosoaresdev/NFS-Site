@@ -1,165 +1,336 @@
-@font-face {
-    font-family: 'folio-std';
-    src: url('/src/font/folio-std-bold.otf') format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap');
+
+/* ESTILIZAÇÃO DO CABEÇALHO */
+.cabecalho {
+  padding: 10px 15px;
+  position: relative;
+  background-color: #000;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    min-height: 100vh;
-  }
-  
-  header {
-    margin-bottom: 0;
-  }
-  
-  .cabecalho {
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .logoNFS {
-    width: 8vw;
-    height: auto;
-  }
-  
-  .right-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .linkCabecalho {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2vw;
-    margin-right: 20px;
-    font-family: 'folio-std';
-  }
-  
-  .logoGithub {
-    size: 2vw;
-    margin-left: 20px;
-  }
-  
-  .conteinerBaner {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    margin-top: -10px;
-  }
- 
-  .conteiner1 {
-    display: flex;
-     width: 100%;
-    height: 100vh; 
-    background-image: url(/src/images/videosite.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .left-setion {
-    padding-top: 20px;
-    margin-bottom: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .fontSite {
-    color: #fff;
-    font-size: 27px;
-    margin-bottom: 20px; 
-    font-family: 'folio-std';
-  }
-  
-  .img {
-    max-width: 400px;
-  }
-  
-  button {
-    margin-top: 20px; 
-  }
-
-.conteiner2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
-    background-image: url(/src/images/w2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+.cabecalho .logo {
+  background: url(/src/images/logoNFS.png) center center no-repeat;
+  display: inline-block;
+  width: 140px;
+  height: 85px;
 }
 
-.center-setion .top{
-
-    margin-top: 6vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.cabecalho h1 {
+  font-size: 0px;
 }
 
-.botton {
-  display: flex;
-  justify-content: center;
+.cabecalho nav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 
-.bolinha {
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 4px;
+.cabecalho ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
 }
 
-.center-setion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; 
+.cabecalho ul li a:hover {
+  color: #f1e708;
 }
 
-.conteinerCenter {
+.cabecalho a {
+  color: #fff;
+}
+
+/* ESTILIZAÇÃO DA PRIMEIRA SECTION */
+
+.tela-inicial{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video-capa{
+  position: absolute;
+  top: 0 auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tela-inicial h2{
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tela-inicial .logo-game-recente{
+  width: 350px;
+}
+
+.tela-inicial .itens-tela-inicial{
+  width: 40%;
+  height: 60%;
+  margin-bottom: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  
 }
 
-.conteinerCenter .center {
+/* ESTILIZAÇÃO DO CONTEINER GAMES */
+
+.secao-games{
+  background-image: url(/src/images/w2.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.tela-inicial{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.secao-games h2{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+/* Estilização Carrossel */
+
+
+.center {
+  align-items: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.conteinerCenter .center .capa{
-  margin: 1vh;
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  align-items: center; 
+  gap: 1em;
+  max-width: 55em;
 }
 
-.conteinerCenter .center .seta{
-  align-self: center;
+.wrapper > .inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  position: relative;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Ajuste o valor conforme necessário para o tamanho desejado */
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 17.5em;
+}
+
+.details {
+  position: absolute;
+  bottom: -5%; 
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 23vh;
+  text-align: center;
 }
 
+.card:hover .details {
+  transform: translateY(0);
+}
+
+.details h1, .details h2 {
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.details h1 {
+  margin-top: 5px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: .6;
+}
+
+.details .tags {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.details .tags span {
+  margin: 2px;
+  padding: .35rem 10px;
+  color: #fff;
+  border: 1.5px solid rgba(255 255 255 / 0.4);
+  border-radius: 4px;
+  border-radius: 50px;
+
+}
+
+.details .desc {
+  color: #fff;
+  line-height: 1.5;
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.details .plataformas h3 {
+  font-size: 25px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  
+}
+
+.details .plataformas ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: center;
+  
+}
+
+.details .plataformas ul li {
+  list-style: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid #fff;
+    
+}
+
+.details .plataformas ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.details .btn-saiba-mais{
+  margin: 10px; 
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.details .btn-saiba-mais:hover{
+  margin: 10px; 
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.map {
+  margin-top: 1em;
+}
+
+.map > button {
+  cursor: pointer;
+  all: unset;
+  background: #f1e708;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+
+.map > button.active:after {
+  background: #000;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 0.4em;
+  width: 0.4em;
+}
+
+/* Estilização do Rodapé */
+.rodape{
+  background-color: #000;
+  padding: 5px 30px;
+  background-size: cover;
+}
+
+.rodape ul{
+  float: right;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.rodape ul li{
+  display: inline-block;
+  padding: 15px;
+}
+.rodape ul li a{
+  color: #fff;
+}
+
+.rodape ul li a:hover{
+  font-weight: bold;
+}
+
+.rodape .copyright{
+  color: #fff;
+  margin-top: 40px;
+}
+
+.redes-sociais img{
+  width: 15px;
+  height: 15px;
+  margin: 0px 5px;
+  float: right;
+  }   

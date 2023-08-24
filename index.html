@@ -1,68 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFS-Site</title>
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/btnStyle.css">
+  <meta charset="UTF-8">
+  <title>NFS</title>
+  
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="src/styles/mediaquery.css">
+  <link rel="stylesheet" href="src/styles/btnStyle.css">
+
+  <meta name="description" content="Fanpage sobre Need For Speed">
 </head>
 <body>
-    <header>
-        <div class="cabecalho">
-          <div class="logoNFS">
-            <a href="index.html"><img src="src/images/logoNFS.jpg" alt="LogoNFS" width="130"></a>
-          </div>
-          <div class="right-section">
-            <nav class="textos">
-              <a class="linkCabecalho" href="index.html">HOME</a>
-              <a class="linkCabecalho" href="https://wa.me/557592131117" target="_blank" title="Clique para ser redirecionado ao meu whatsapp">CONTACT</a>
-            </nav>
-            <div class="logoGithub">
-              <a href="https://github.com/fabiosoaresdev" target="_blank"><img src="src/images/logoGithub.png" alt="Run GitHub" width="60vh" title="Clique para visitar meu github"></a>
-            </div>
-          </div>
-        </div>
-      </header>
-      
-    <div 
-        class="conteiner1">
+  
+  <header class="cabecalho">
+    <a href="index.html" class="logo"><h1>Logo NFS</h1></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
         
-        <div class="left-setion">
-            <span class="fontSite">VEJA MAIS SOBRE O</span>
-            <img class="img" src="src/images/unboundlogo.png" alt="">
-            <button class="glow-on-hover" type="button">CLICANDO AQUI!</button>
-        </div> 
-    </div>
+        <li><a href="" target="_blank">Contact</a></li>
+        <li><a href="#games">Games</a></li>
+        </ul>
+    </nav>
+  </header>
 
-    <div class="conteiner2">
-      <div class="center-setion">
-        <div class="top">
-          <span class="fontSite">GAMES</span>
+
+<main>
+  <section class="tela-inicial" id="tela-inicial">
+
+    <video autoplay muted loop id="video-capa">
+        <source src="src/video/video.mp4" type="video/mp4"> Seu navegador não suporta a reprodução não suporta a reprodução de vídeos.
+    </video>
+
+        <div class="itens-tela-inicial">
+            <h2>VEJA MAIS SOBRE O</h2>
+            <img src="src/images/unboundlogo.png" alt="LogoUnbound" class="logo-game-recente">
+            <a href="#games"><button class="glow-on-hover" type="button">CLICANDO AQUI!</button></a>
         </div>
-        <div class="conteinerCenter">
-          <div class="center">
-            <div class="image-wrapper">
-              <img src="src/images/SetaEsquerda.png" alt="Seta" width="30px" class="seta">
-              <img src="src/images/capaUnbound.jpg" alt="Unbound" width="200px" class="capa">
-              <img src="src/images/capaHeat.jpg" alt="heat" width="215px" class="capa">
-              <img src="src/images/capaPayback.jpg" alt="PayBack" width="200px" class="capa">
-              <img src="src/images/SetaDireita.png" alt="Seta" width="30px" class="seta">
+    
+  </section>
+  
+  <section id="games" class="secao-games">
+    <div class="center">
+      <h2>Games</h2>
+      <div class="wrapper">
+        <div class="inner">
+
+          <!-- Unbound -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-unbound.png">
+              <div class="details">
+                <h1>NFS UNBOUND</h1>
+                <h2>2022 • Criterion Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  O Unbound Mistura elementos de Anime com um tremendo realismo, e ainda por cima conta com uma polícia super desafiadora
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://store.steampowered.com/app/1846380/Need_for_Speed_Unbound/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="Steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-br/games/store/need-for-speed-unbound/9pp837l3q75d" target="_blank">
+                        <img src="/src/images/logo-xbox.png" alt="Xbox" title="Xbox">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://store.playstation.com/pt-br/product/UP0006-PPSA01716_00-NEEDFORSPEED2022" target="_blank">
+                        <img src="src/images/logo-playstation.png" alt="playstation" title="Playstation">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="https://nfs.fandom.com/wiki/Need_for_Speed:_Unbound" target="_blank"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="botton">
-          <div class="bolinha"></div>
-          <div class="bolinha"></div>
-          <div class="bolinha"></div>
-          <div class="bolinha"></div>
-          <div class="bolinha"></div>
+
+          <!-- Hot Pursuit -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-hotpursuit.png">
+              <div class="details">
+                <h1>NFS Hot Pursuit Remastered</h1>
+                <h2>2020 • Criterion Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Perseguição</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  Hot Pursuit é um jogo de corrida que te coloca no papel de um policial ou um fugitivo em um mundo aberto cheio de carros rápidos e bonitos
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://store.steampowered.com/app/1328660/Need_for_Speed_Hot_Pursuit_Remastered/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="Steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-BR/games/store/need-for-speed-hot-pursuit-remastered/9NMBJQ0265ZK" target="_blank">
+                        <img src="src/images/logo-xbox.png" alt="Xbox" title="Xbox">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.playstation.com/pt-br/games/need-for-speed-hot-pursuit-remastered/" target="_blank">
+                        <img src="/src/images/logo-playstation.png" alt="Xbox" title="Playstation">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="#"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Heat -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-heat.png">
+              <div class="details">
+                <h1>NFS HEAT</h1>
+                <h2>2019 • Ghost Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  Com um lindo mapa e seu modo diúrno / noturno, o Heat é considerado por muitos um dos melhores Needs da atualidade.
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-BR/games/store/need-for-speed-heat/BRZZLBF5T245" target="_blank">
+                        <img src="src/images/logo-xbox.png" alt="xbox" title="xbox">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://store.playstation.com/pt-br/product/UP0006-CUSA15081_00-NEEDFORSPEED2020" target="_blank">
+                        <img src="src/images/logo-playstation.png" alt="playstation" title="playstation">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="https://nfs.fandom.com/wiki/Need_for_Speed:_Heat" target="_blank"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payback -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-payback.png">
+              <div class="details">
+                <h1>NFS PAYBACK</h1>
+                <h2>2017 • Ghost Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  Um Need polémico, porém, cheio de coisas novas para a franquia, como modo 24 horas (Dia e noite, incluindo nascer e por do sol) e corridas de Rally.
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://steamcommunity.com/app/1262580/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-br/games/store/Need-for-Speed-Payback/C355T88BBX1S" target="_blank">
+                        <img src="src/images/logo-xbox.png" alt="Xbox" title="Xbox">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://store.playstation.com/pt-br/product/UP0006-CUSA05999_00-NFS1800000000001" target="_blank">
+                        <img src="src/images/logo-playstation.png" alt="playstation" title="playstation">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="https://nfs.fandom.com/wiki/Need_for_Speed:_Payback" target="_blank"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NFS -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-2015.png">
+              <div class="details">
+                <h1>NFS</h1>
+                <h2>2015 • Ghost Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  O Unbound Mistura elementos de Anime com um tremendo realismo, e ainda por cima conta com uma polícia super desafiadora
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://store.steampowered.com/app/1262540/Need_for_Speed/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-BR/games/store/need-for-speed/BXWJNW4170RM" target="_blank">
+                        <img src="src/images/logo-xbox.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://store.playstation.com/pt-br/product/UP0006-CUSA01925_00-NFS16SE000000001" target="_blank">
+                        <img src="src/images/logo-playstation.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="https://nfs.fandom.com/wiki/Need_for_Speed_(2015)" target="_blank"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rivals -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-rivals.png">
+              <div class="details">
+                <h1>NFS RIVALS</h1>
+                <h2>2022 • Criterion Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  Ser corredor ou Policial? Neste Need você pode ser os dois. Escolha o seu lado e enfrente seus Rivais.
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="https://store.steampowered.com/app/1262600/Need_for_Speed_Rivals/" target="_blank">
+                        <img src="src/images/logo-steam.png" alt="Steam" title="Steam">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.xbox.com/pt-BR/games/store/need-for-speed-rivals/C3VM0TMWNZ5M" target="_blank">
+                        <img src="src/images/logo-xbox.png" alt="Playstation" title="Xbox">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.playstation.com/pt-br/games/need-for-speed-rivals/" target="_blank">
+                        <img src="src/images/logo-playstation.png" alt="Playstation" title="Playstation">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="#"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOST WANTED -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-mw.png">
+              <div class="details">
+                <h1>NFS PAYBACK</h1>
+                <h2>2017 • Ghost Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  O Unbound Mistura elementos de Anime com um tremendo realismo, e ainda por cima conta com uma polícia super desafiadora
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="src/images/logo-torrent.png" alt="Steam" title="steam">
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="#"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Underground 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="src/images/capa-u2.png">
+              <div class="details">
+                <h1>NFS</h1>
+                <h2>2015 • Ghost Games </h2>
+                
+                <div class="tags">
+                  <span class="tag">Corrida</span>
+                  <span class="tag">Arcade</span>
+                  <span class="tag">Indie</span>
+                </div>
+                <p class="desc">
+                  O Unbound Mistura elementos de Anime com um tremendo realismo, e ainda por cima conta com uma polícia super desafiadora
+                </p>
+                <div class="plataformas">
+                  <h3>Disponível em:</h3>
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="src/images/logo-torrent.png" alt="Steam" title="steam">
+                      </a>
+                    
+                    </li>
+                  </ul>
+                  <a href="#"><button class="btn-saiba-mais">SAIBA MAIS</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
+      <div class="map">
+        <button class="active voltar"></button>
+        <button class="avancar"></button>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="rodape">     
+  <a href="index.html">
+      <img src="src/images/logoNFS.png" alt="Logo" class="logo">
+  </a>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#onde-estamos">Contact</a></li>
+  </ul>
+  <div class="redes-sociais-e-copy">
+      <div class="redes-sociais">
+          <a href="#" target="_blank"><img src="src/images/instagram.png" alt="Instagram" class="instagram" title="Clique para acessar o Instagram"></a>
+          <a href="#" target="_blank"><img src="src/images/facebook.png" alt="facebook" class="facebook" title="Clique para acessar o Facebook"></a>
+          <a href="https://www.linkedin.com/in/f%C3%A1bio-soares-859229277/" target="_blank"><img src="/src/images/linkedin.png" alt="Linkedin" class="Linkedin" title="Clique para acessar o Linkedin do Criador do Site"></a>
+          <a href="https://github.com/fabiosoaresdev" target="_blank"><img src="src/images/github.png" alt="facebook" class="facebook" title="Clique para acessar o Github do Criador do Site"></a>
+      </div>
+      <div class="copyright">© 2023 fabiosoaresdev</div>
     </div>
     
-    
-       
-    
+</div>   
+</footer> 
+<script src="src/script/script.js"></script>
 </body>
 </html>
+

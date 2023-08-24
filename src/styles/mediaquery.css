@@ -1,0 +1,95 @@
+
+
+@media (max-width: 980px) {
+    
+    .tela-inicial .itens-tela-inicial {
+        width: 100%; 
+        height: auto; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
+}
+
+@media (max-width: 768px){
+    .tela-inicial .itens-tela-inicial {
+        width: 100%; 
+        height: auto; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+    .cabecalho .logo{
+        display: block;
+        margin: 0 auto;        
+    }
+
+    .cabecalho nav{
+        position: static;
+        text-align: center;
+        width: 96%;
+        margin-top: -20px;
+    }
+
+    .cabecalho nav ul li a{
+        width: 100%;
+        display: block;
+    }
+
+    .painel h2{
+        font-size: 2.5rem;
+    }
+
+    .tela-inicial {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url(/src/images/w1.jpg);
+        background-position: center; 
+        background-size: cover; 
+    }
+    
+    .tela-inicial{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+         
+    .tela-inicial h2{
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        
+      }
+
+    .tela-inicial .itens-tela-inicial {
+        width: 100%; 
+        height: auto; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+      }
+
+    .tela-inicial .logo-game-recente{
+        width: 300px;
+    }
+
+    .tela-inicial .glow-on-hover{
+        font-size: 40px;
+        width: 250px;
+    }
+
+    .wrapper {
+        display: flex;
+        grid-gap: 1em;
+        overflow: hidden;
+        align-items: center; 
+        gap: 1em;
+        max-width: 18em;
+      }
+}
