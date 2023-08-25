@@ -84,6 +84,11 @@
         width: 250px;
     }
 
+    
+}
+
+@media (max-width: 500px){
+
     .wrapper {
         display: flex;
         grid-gap: 1em;
