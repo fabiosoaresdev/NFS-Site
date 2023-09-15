@@ -5,7 +5,7 @@ let currentPosition = 0;
 let isDragging = false;
 let startPosX = 0;
 
-const dragThreshold = 12.56; // Ajuste o valor conforme necessário
+const dragThreshold =5.57; // Ajuste o valor conforme necessário
 
 
 buttonsWrapper.addEventListener("click", e => {

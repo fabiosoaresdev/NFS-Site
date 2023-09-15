@@ -22,7 +22,7 @@
     .cabecalho nav{
         position: static;
         text-align: center;
-        width: 96%;
+        width: 100%;
         margin-top: -20px;
     }
 
@@ -89,6 +89,49 @@
         overflow: hidden;
         align-items: center; 
         gap: 1em;
-        max-width: 18em;
+        max-width: 17em;
+        margin-right: 20px;
       }
+    
+    .card-image{
+        border-radius: 20px;
+    }
+
+    .card-image img {
+        width: 15.4em;
+    }
+    .details h1{
+        font-size: 22px;
+    }
+    .details .tags {
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .details .desc {
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+
+    .details .plataformas ul {
+        margin-top: 5px;
+    }
+
+    .details .plataformas ul li {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1.5px solid #fff;
+        
+    }
+
+    .details .btn-saiba-mais{
+        font-size: 20px;
+    }
+
+    .details .btn-saiba-mais:hover{
+        font-size: 20px;
+    }
 }
