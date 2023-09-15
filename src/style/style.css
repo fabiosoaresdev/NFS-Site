@@ -123,6 +123,7 @@
   align-items: center; 
   gap: 1em;
   max-width: 55em;
+  overflow-x: hidden;
 }
 
 .wrapper > .inner {
@@ -315,12 +316,14 @@
   display: inline-block;
   padding: 15px;
 }
+
 .rodape ul li a{
   color: #fff;
 }
 
 .rodape ul li a:hover{
   font-weight: bold;
+  color: #f1e708;
 }
 
 .rodape .copyright{

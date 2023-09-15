@@ -84,14 +84,11 @@
 @media (max-width: 500px){
 
     .wrapper {
-        display: flex;
-        grid-gap: 1em;
-        overflow: hidden;
-        align-items: center; 
+        
         gap: 1em;
         max-width: 17em;
-        margin-right: 20px;
-      }
+        margin-right: 20px;  
+    }
     
     .card-image{
         border-radius: 20px;
@@ -100,19 +97,15 @@
     .card-image img {
         width: 15.4em;
     }
+
     .details h1{
         font-size: 22px;
     }
+
     .details .tags {
         font-size: 10px;
         text-align: center;
         margin-bottom: 12px;
-    }
-
-    .details .desc {
-        font-size: 14px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
     }
 
     .details .plataformas ul {
@@ -123,8 +116,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        border: 1.5px solid #fff;
-        
+        border: 1.5px solid #fff;   
     }
 
     .details .btn-saiba-mais{
@@ -133,5 +125,18 @@
 
     .details .btn-saiba-mais:hover{
         font-size: 20px;
+    }
+      
+    .rodape{        
+        padding: 5px 10px;
+        background-size: cover;
+    }
+      
+    .rodape ul{
+        margin-top: 15px;
+    }
+     
+    .rodape .copyright{
+        margin-top: 10px;
     }
 }
