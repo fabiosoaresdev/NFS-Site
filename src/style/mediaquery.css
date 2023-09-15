@@ -13,15 +13,7 @@
 }
 
 @media (max-width: 768px){
-    .tela-inicial .itens-tela-inicial {
-        width: 100%; 
-        height: auto; 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    
+    /* Cabeçalho */
     .cabecalho .logo{
         display: block;
         margin: 0 auto;        
@@ -38,6 +30,8 @@
         width: 100%;
         display: block;
     }
+
+    
 
     .painel h2{
         font-size: 2.5rem;
